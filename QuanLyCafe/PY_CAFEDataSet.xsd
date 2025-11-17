@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PY_CAFEDataSet" targetNamespace="http://tempuri.org/PY_CAFEDataSet.xsd" xmlns:mstns="http://tempuri.org/PY_CAFEDataSet.xsd" xmlns="http://tempuri.org/PY_CAFEDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="PY_CAFEConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="PY_CAFEConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.QuanLyCafe.Properties.Settings.GlobalReference.Default.PY_CAFEConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ChiTietHoaDonTableAdapter" GeneratorDataComponentClassName="ChiTietHoaDonTableAdapter" Name="ChiTietHoaDon" UserDataComponentName="ChiTietHoaDonTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="PY_CAFEConnectionString (Settings)" DbObjectName="PY_CAFE.dbo.ChiTietHoaDon" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT MASP, SOLUONG, DONGIA, THANHTIEN FROM dbo.ChiTietHoaDon</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="MASP" DataSetColumn="MASP" />
+              <Mapping SourceColumn="SOLUONG" DataSetColumn="SOLUONG" />
+              <Mapping SourceColumn="DONGIA" DataSetColumn="DONGIA" />
+              <Mapping SourceColumn="THANHTIEN" DataSetColumn="THANHTIEN" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DanhMucMonAnTableAdapter" GeneratorDataComponentClassName="DanhMucMonAnTableAdapter" Name="DanhMucMonAn" UserDataComponentName="DanhMucMonAnTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="PY_CAFEConnectionString (Settings)" DbObjectName="PY_CAFE.dbo.DanhMucMonAn" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT TENDM FROM dbo.DanhMucMonAn</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="TENDM" DataSetColumn="TENDM" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="HoaDonTableAdapter" GeneratorDataComponentClassName="HoaDonTableAdapter" Name="HoaDon" UserDataComponentName="HoaDonTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="PY_CAFEConnectionString (Settings)" DbObjectName="PY_CAFE.dbo.HoaDon" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[HoaDon] WHERE (([MAHD] = @Original_MAHD) AND ((@IsNull_NGAYLAP = 1 AND [NGAYLAP] IS NULL) OR ([NGAYLAP] = @Original_NGAYLAP)) AND ((@IsNull_MANV = 1 AND [MANV] IS NULL) OR ([MANV] = @Original_MANV)) AND ((@IsNull_MAKH = 1 AND [MAKH] IS NULL) OR ([MAKH] = @Original_MAKH)) AND ((@IsNull_MABAN = 1 AND [MABAN] IS NULL) OR ([MABAN] = @Original_MABAN)) AND ((@IsNull_TONGTIEN = 1 AND [TONGTIEN] IS NULL) OR ([TONGTIEN] = @Original_TONGTIEN)) AND ((@IsNull_TRANGTHAI = 1 AND [TRANGTHAI] IS NULL) OR ([TRANGTHAI] = @Original_TRANGTHAI)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_MAHD" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="MAHD" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_NGAYLAP" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NGAYLAP" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_NGAYLAP" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="NGAYLAP" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_MANV" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="MANV" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_MANV" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="MANV" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_MAKH" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="MAKH" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_MAKH" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="MAKH" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_MABAN" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="MABAN" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_MABAN" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="MABAN" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_TONGTIEN" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TONGTIEN" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_TONGTIEN" Precision="18" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="TONGTIEN" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_TRANGTHAI" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TRANGTHAI" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_TRANGTHAI" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TRANGTHAI" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[HoaDon] ([MAHD], [NGAYLAP], [MANV], [MAKH], [MABAN], [TONGTIEN], [TRANGTHAI]) VALUES (@MAHD, @NGAYLAP, @MANV, @MAKH, @MABAN, @TONGTIEN, @TRANGTHAI);
+SELECT MAHD, NGAYLAP, MANV, MAKH, MABAN, TONGTIEN, TRANGTHAI FROM HoaDon WHERE (MAHD = @MAHD)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@MAHD" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="MAHD" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@NGAYLAP" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="NGAYLAP" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@MANV" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="MANV" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@MAKH" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="MAKH" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@MABAN" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="MABAN" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@TONGTIEN" Precision="18" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="TONGTIEN" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@TRANGTHAI" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TRANGTHAI" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT MAHD, NGAYLAP, MANV, MAKH, MABAN, TONGTIEN, TRANGTHAI FROM dbo.HoaDon</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[HoaDon] SET [MAHD] = @MAHD, [NGAYLAP] = @NGAYLAP, [MANV] = @MANV, [MAKH] = @MAKH, [MABAN] = @MABAN, [TONGTIEN] = @TONGTIEN, [TRANGTHAI] = @TRANGTHAI WHERE (([MAHD] = @Original_MAHD) AND ((@IsNull_NGAYLAP = 1 AND [NGAYLAP] IS NULL) OR ([NGAYLAP] = @Original_NGAYLAP)) AND ((@IsNull_MANV = 1 AND [MANV] IS NULL) OR ([MANV] = @Original_MANV)) AND ((@IsNull_MAKH = 1 AND [MAKH] IS NULL) OR ([MAKH] = @Original_MAKH)) AND ((@IsNull_MABAN = 1 AND [MABAN] IS NULL) OR ([MABAN] = @Original_MABAN)) AND ((@IsNull_TONGTIEN = 1 AND [TONGTIEN] IS NULL) OR ([TONGTIEN] = @Original_TONGTIEN)) AND ((@IsNull_TRANGTHAI = 1 AND [TRANGTHAI] IS NULL) OR ([TRANGTHAI] = @Original_TRANGTHAI)));
+SELECT MAHD, NGAYLAP, MANV, MAKH, MABAN, TONGTIEN, TRANGTHAI FROM HoaDon WHERE (MAHD = @MAHD)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@MAHD" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="MAHD" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@NGAYLAP" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="NGAYLAP" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@MANV" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="MANV" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@MAKH" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="MAKH" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@MABAN" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="MABAN" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@TONGTIEN" Precision="18" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="TONGTIEN" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@TRANGTHAI" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TRANGTHAI" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_MAHD" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="MAHD" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_NGAYLAP" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NGAYLAP" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_NGAYLAP" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="NGAYLAP" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_MANV" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="MANV" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_MANV" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="MANV" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_MAKH" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="MAKH" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_MAKH" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="MAKH" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_MABAN" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="MABAN" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_MABAN" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="MABAN" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_TONGTIEN" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TONGTIEN" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_TONGTIEN" Precision="18" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="TONGTIEN" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_TRANGTHAI" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TRANGTHAI" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_TRANGTHAI" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TRANGTHAI" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="MAHD" DataSetColumn="MAHD" />
+              <Mapping SourceColumn="NGAYLAP" DataSetColumn="NGAYLAP" />
+              <Mapping SourceColumn="MANV" DataSetColumn="MANV" />
+              <Mapping SourceColumn="MAKH" DataSetColumn="MAKH" />
+              <Mapping SourceColumn="MABAN" DataSetColumn="MABAN" />
+              <Mapping SourceColumn="TONGTIEN" DataSetColumn="TONGTIEN" />
+              <Mapping SourceColumn="TRANGTHAI" DataSetColumn="TRANGTHAI" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PY_CAFEDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="PY_CAFEDataSet" msprop:Generator_DataSetName="PY_CAFEDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ChiTietHoaDon" msprop:Generator_RowEvHandlerName="ChiTietHoaDonRowChangeEventHandler" msprop:Generator_RowDeletedName="ChiTietHoaDonRowDeleted" msprop:Generator_RowDeletingName="ChiTietHoaDonRowDeleting" msprop:Generator_RowEvArgName="ChiTietHoaDonRowChangeEvent" msprop:Generator_TablePropName="ChiTietHoaDon" msprop:Generator_RowChangedName="ChiTietHoaDonRowChanged" msprop:Generator_RowChangingName="ChiTietHoaDonRowChanging" msprop:Generator_TableClassName="ChiTietHoaDonDataTable" msprop:Generator_RowClassName="ChiTietHoaDonRow" msprop:Generator_TableVarName="tableChiTietHoaDon" msprop:Generator_UserTableName="ChiTietHoaDon">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MASP" msprop:Generator_ColumnPropNameInRow="MASP" msprop:Generator_ColumnPropNameInTable="MASPColumn" msprop:Generator_ColumnVarNameInTable="columnMASP" msprop:Generator_UserColumnName="MASP">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SOLUONG" msprop:Generator_ColumnPropNameInRow="SOLUONG" msprop:Generator_ColumnPropNameInTable="SOLUONGColumn" msprop:Generator_ColumnVarNameInTable="columnSOLUONG" msprop:Generator_UserColumnName="SOLUONG" type="xs:int" minOccurs="0" />
+              <xs:element name="DONGIA" msprop:Generator_ColumnPropNameInRow="DONGIA" msprop:Generator_ColumnPropNameInTable="DONGIAColumn" msprop:Generator_ColumnVarNameInTable="columnDONGIA" msprop:Generator_UserColumnName="DONGIA" type="xs:decimal" minOccurs="0" />
+              <xs:element name="THANHTIEN" msprop:Generator_ColumnPropNameInRow="THANHTIEN" msprop:Generator_ColumnPropNameInTable="THANHTIENColumn" msprop:Generator_ColumnVarNameInTable="columnTHANHTIEN" msprop:Generator_UserColumnName="THANHTIEN" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DanhMucMonAn" msprop:Generator_RowEvHandlerName="DanhMucMonAnRowChangeEventHandler" msprop:Generator_RowDeletedName="DanhMucMonAnRowDeleted" msprop:Generator_RowDeletingName="DanhMucMonAnRowDeleting" msprop:Generator_RowEvArgName="DanhMucMonAnRowChangeEvent" msprop:Generator_TablePropName="DanhMucMonAn" msprop:Generator_RowChangedName="DanhMucMonAnRowChanged" msprop:Generator_RowChangingName="DanhMucMonAnRowChanging" msprop:Generator_TableClassName="DanhMucMonAnDataTable" msprop:Generator_RowClassName="DanhMucMonAnRow" msprop:Generator_TableVarName="tableDanhMucMonAn" msprop:Generator_UserTableName="DanhMucMonAn">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TENDM" msprop:Generator_ColumnPropNameInRow="TENDM" msprop:Generator_ColumnPropNameInTable="TENDMColumn" msprop:Generator_ColumnVarNameInTable="columnTENDM" msprop:Generator_UserColumnName="TENDM" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="HoaDon" msprop:Generator_RowEvHandlerName="HoaDonRowChangeEventHandler" msprop:Generator_RowDeletedName="HoaDonRowDeleted" msprop:Generator_RowDeletingName="HoaDonRowDeleting" msprop:Generator_RowEvArgName="HoaDonRowChangeEvent" msprop:Generator_TablePropName="HoaDon" msprop:Generator_RowChangedName="HoaDonRowChanged" msprop:Generator_RowChangingName="HoaDonRowChanging" msprop:Generator_TableClassName="HoaDonDataTable" msprop:Generator_RowClassName="HoaDonRow" msprop:Generator_TableVarName="tableHoaDon" msprop:Generator_UserTableName="HoaDon">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MAHD" msprop:Generator_ColumnPropNameInRow="MAHD" msprop:Generator_ColumnPropNameInTable="MAHDColumn" msprop:Generator_ColumnVarNameInTable="columnMAHD" msprop:Generator_UserColumnName="MAHD">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NGAYLAP" msprop:Generator_ColumnPropNameInRow="NGAYLAP" msprop:Generator_ColumnPropNameInTable="NGAYLAPColumn" msprop:Generator_ColumnVarNameInTable="columnNGAYLAP" msprop:Generator_UserColumnName="NGAYLAP" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="MANV" msprop:Generator_ColumnPropNameInRow="MANV" msprop:Generator_ColumnPropNameInTable="MANVColumn" msprop:Generator_ColumnVarNameInTable="columnMANV" msprop:Generator_UserColumnName="MANV" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MAKH" msprop:Generator_ColumnPropNameInRow="MAKH" msprop:Generator_ColumnPropNameInTable="MAKHColumn" msprop:Generator_ColumnVarNameInTable="columnMAKH" msprop:Generator_UserColumnName="MAKH" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MABAN" msprop:Generator_ColumnPropNameInRow="MABAN" msprop:Generator_ColumnPropNameInTable="MABANColumn" msprop:Generator_ColumnVarNameInTable="columnMABAN" msprop:Generator_UserColumnName="MABAN" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TONGTIEN" msprop:Generator_ColumnPropNameInRow="TONGTIEN" msprop:Generator_ColumnPropNameInTable="TONGTIENColumn" msprop:Generator_ColumnVarNameInTable="columnTONGTIEN" msprop:Generator_UserColumnName="TONGTIEN" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TRANGTHAI" msprop:Generator_ColumnPropNameInRow="TRANGTHAI" msprop:Generator_ColumnPropNameInTable="TRANGTHAIColumn" msprop:Generator_ColumnVarNameInTable="columnTRANGTHAI" msprop:Generator_UserColumnName="TRANGTHAI" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:HoaDon" />
+      <xs:field xpath="mstns:MAHD" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
