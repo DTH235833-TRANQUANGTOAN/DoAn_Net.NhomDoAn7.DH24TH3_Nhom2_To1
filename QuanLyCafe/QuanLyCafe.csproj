@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="formDoanhThu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formDoanhThu.Designer.cs">
+      <DependentUpon>formDoanhThu.cs</DependentUpon>
+    </Compile>
     <Compile Include="formSanPham.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +113,9 @@
     <Compile Include="formQuanLyNhanVien.Designer.cs">
       <DependentUpon>formQuanLyNhanVien.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="formDoanhThu.resx">
+      <DependentUpon>formDoanhThu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formKhachThanhVien.resx">
       <DependentUpon>formKhachThanhVien.cs</DependentUpon>
     </EmbeddedResource>

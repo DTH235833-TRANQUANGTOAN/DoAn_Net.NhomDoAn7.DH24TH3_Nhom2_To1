@@ -41,6 +41,7 @@
             this.btnQuanLyNhanVien = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
             this.btnDanhSachSanPham = new System.Windows.Forms.Button();
+            this.btnDoanhThu = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pY_CAFEDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pYCAFEDataSetBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -150,7 +151,7 @@
             // 
             this.btnThoat.BackColor = System.Drawing.Color.Linen;
             this.btnThoat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnThoat.Location = new System.Drawing.Point(624, 157);
+            this.btnThoat.Location = new System.Drawing.Point(367, 259);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(167, 74);
             this.btnThoat.TabIndex = 10;
@@ -170,6 +171,18 @@
             this.btnDanhSachSanPham.UseVisualStyleBackColor = false;
             this.btnDanhSachSanPham.Click += new System.EventHandler(this.btnDanhSachSanPham_Click);
             // 
+            // btnDoanhThu
+            // 
+            this.btnDoanhThu.BackColor = System.Drawing.Color.Linen;
+            this.btnDoanhThu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnDoanhThu.Location = new System.Drawing.Point(624, 157);
+            this.btnDoanhThu.Name = "btnDoanhThu";
+            this.btnDoanhThu.Size = new System.Drawing.Size(167, 74);
+            this.btnDoanhThu.TabIndex = 11;
+            this.btnDoanhThu.Text = "Báo cáo doanh thu";
+            this.btnDoanhThu.UseVisualStyleBackColor = false;
+            this.btnDoanhThu.Click += new System.EventHandler(this.btnDoanhThu_Click);
+            // 
             // formChucNang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
@@ -177,6 +190,7 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.Beige;
             this.ClientSize = new System.Drawing.Size(955, 502);
+            this.Controls.Add(this.btnDoanhThu);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnDanhSachSanPham);
             this.Controls.Add(this.btnKhachThanhVien);
@@ -212,5 +226,6 @@
         private System.Windows.Forms.Button btnQuanLyNhanVien;
         private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.Button btnDanhSachSanPham;
+        private System.Windows.Forms.Button btnDoanhThu;
     }
 }

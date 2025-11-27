@@ -12,12 +12,6 @@ CREATE TABLE NhanVien
 	MATKHAU NCHAR(20),
 	TRANGTHAI NVARCHAR(20)
 );
-
-
-
--- ==============================================
--- BẢNG KHÁCH THÀNH VIÊN
--- ==============================================
 CREATE TABLE KhachThanhVien
 (
 	MAKH NCHAR(10) PRIMARY KEY,
@@ -27,19 +21,6 @@ CREATE TABLE KhachThanhVien
 	SDT NCHAR(15),
 	DIEMTICHLUY INT
 );
-
--- ==============================================
--- BẢNG DANH MỤC MÓN ĂN
--- ==============================================
-CREATE TABLE DanhMucMonAn
-(
-	MADM NCHAR(10) PRIMARY KEY,
-	TENDM NVARCHAR(50)
-);
-
--- ==============================================
--- BẢNG SẢN PHẨM
--- ==============================================
 CREATE TABLE SanPham
 (
 	MASP NCHAR(10) PRIMARY KEY,
@@ -49,26 +30,17 @@ CREATE TABLE SanPham
 	TRANGTHAI NVARCHAR(20),
 	FOREIGN KEY (MADM) REFERENCES DanhMucMonAn(MADM)
 );
-
--- ==============================================
--- BẢNG HÓA ĐƠN
--- ==============================================
 CREATE TABLE HoaDon
 (
 	MAHD NCHAR(10) PRIMARY KEY,
 	NGAYLAP DATE,
 	MANV NCHAR(10),
 	MAKH NCHAR(10), 
-
 	TONGTIEN DECIMAL(18,2),
 	FOREIGN KEY (MANV) REFERENCES NhanVien(MANV),
 	FOREIGN KEY (MAKH) REFERENCES KhachThanhVien(MAKH),
 
 );
-
--- ==============================================
--- BẢNG CHI TIẾT HÓA ĐƠN
--- ==============================================
 CREATE TABLE ChiTietHoaDon
 (
 	MAHD NCHAR(10),
@@ -80,10 +52,6 @@ CREATE TABLE ChiTietHoaDon
 	FOREIGN KEY (MAHD) REFERENCES HoaDon(MAHD),
 	FOREIGN KEY (MASP) REFERENCES SanPham(MASP)
 );
-
--- ==============================================
--- BẢNG TỒN KHO (Nguyên liệu)
--- ==============================================
 CREATE TABLE TonKho
 (
 	MANGUYENLIEU NCHAR(10) PRIMARY KEY,
@@ -91,10 +59,6 @@ CREATE TABLE TonKho
 	SOLUONGTON INT,
 	DONVITINH NVARCHAR(20)
 );
-
--- ==============================================
--- BẢNG NHẬP KHO
--- ==============================================
 CREATE TABLE Nhap
 (
 	MANHAP NCHAR(10),
@@ -114,10 +78,6 @@ CREATE TABLE DanhMuc
 	MADM NCHAR(10) PRIMARY KEY,
 	TENDANHMUC NVARCHAR(50),
 );
-
--- ==============================================
--- INSERT DỮ LIỆU MẪU
--- ==============================================
 
 -- NHÂN VIÊN
 INSERT INTO NhanVien VALUES

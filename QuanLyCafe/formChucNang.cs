@@ -128,5 +128,13 @@ namespace QuanLyCafe
             f9.ShowDialog();
             this.Close();
         }
+
+        private void btnDoanhThu_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            formDoanhThu f10 = new formDoanhThu();
+            f10.ShowDialog();
+            this.Close();
+        }
     }
 }

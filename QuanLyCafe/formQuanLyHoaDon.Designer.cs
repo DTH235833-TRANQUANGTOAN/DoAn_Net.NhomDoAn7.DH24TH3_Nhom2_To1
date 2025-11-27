@@ -32,14 +32,17 @@
             this.btnThoat = new System.Windows.Forms.Button();
             this.GridHoaDon = new System.Windows.Forms.DataGridView();
             this.btnXoa = new System.Windows.Forms.Button();
+            this.gridCTHD = new System.Windows.Forms.DataGridView();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.GridHoaDon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridCTHD)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 25F);
-            this.label1.Location = new System.Drawing.Point(35, 4);
+            this.label1.Location = new System.Drawing.Point(6, 21);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(258, 67);
             this.label1.TabIndex = 16;
@@ -75,11 +78,32 @@
             this.btnXoa.UseVisualStyleBackColor = true;
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
+            // gridCTHD
+            // 
+            this.gridCTHD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridCTHD.Location = new System.Drawing.Point(-3, 413);
+            this.gridCTHD.Name = "gridCTHD";
+            this.gridCTHD.RowHeadersWidth = 62;
+            this.gridCTHD.RowTemplate.Height = 28;
+            this.gridCTHD.Size = new System.Drawing.Size(1132, 253);
+            this.gridCTHD.TabIndex = 18;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 367);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(219, 32);
+            this.label2.TabIndex = 19;
+            this.label2.Text = "CHI TIẾT HÓA ĐƠN";
+            // 
             // formQuanLyHoaDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1156, 386);
+            this.ClientSize = new System.Drawing.Size(1156, 694);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.gridCTHD);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnThoat);
@@ -90,6 +114,7 @@
             this.Text = "formQuanLyHoaDon";
             this.Load += new System.EventHandler(this.formQuanLyHoaDon_Load);
             ((System.ComponentModel.ISupportInitialize)(this.GridHoaDon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridCTHD)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -101,5 +126,7 @@
         private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.DataGridView GridHoaDon;
         private System.Windows.Forms.Button btnXoa;
+        private System.Windows.Forms.DataGridView gridCTHD;
+        private System.Windows.Forms.Label label2;
     }
 }
