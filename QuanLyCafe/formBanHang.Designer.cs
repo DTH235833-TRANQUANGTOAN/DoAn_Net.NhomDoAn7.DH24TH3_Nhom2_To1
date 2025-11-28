@@ -143,11 +143,11 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 506);
+            this.label5.Location = new System.Drawing.Point(16, 506);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(179, 32);
+            this.label5.Size = new System.Drawing.Size(140, 32);
             this.label5.TabIndex = 11;
-            this.label5.Text = "Mã khách hàng";
+            this.label5.Text = "Khách hàng";
             // 
             // cboMaKH
             // 
@@ -171,7 +171,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1156, 720);
+            this.ClientSize = new System.Drawing.Size(1156, 559);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.cboMaKH);
             this.Controls.Add(this.label5);

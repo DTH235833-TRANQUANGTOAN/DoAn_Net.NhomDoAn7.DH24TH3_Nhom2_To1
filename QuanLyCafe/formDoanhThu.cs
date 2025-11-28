@@ -20,6 +20,7 @@ namespace QuanLyCafe
 
         private void formDoanhThu_Load(object sender, EventArgs e)
         {
+            this.Icon = new Icon(@"D:\ky 1 nam 3\net\DoAn\DoAn_Net.NhomDoAn7.DH24TH3_Nhom2_To1\QuanLyCafe\HinhAnh\cafe_icon.ico");
             comboBox1.SelectedIndex = 0;
             comboBox1.SelectedIndexChanged += ComboBox1_ThayDoi;
         }

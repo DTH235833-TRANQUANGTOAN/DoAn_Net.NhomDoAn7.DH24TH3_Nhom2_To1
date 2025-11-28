@@ -65,7 +65,7 @@
             this.GridHoaDon.Name = "GridHoaDon";
             this.GridHoaDon.RowHeadersWidth = 62;
             this.GridHoaDon.RowTemplate.Height = 28;
-            this.GridHoaDon.Size = new System.Drawing.Size(1132, 253);
+            this.GridHoaDon.Size = new System.Drawing.Size(1132, 217);
             this.GridHoaDon.TabIndex = 14;
             // 
             // btnXoa
@@ -81,17 +81,17 @@
             // gridCTHD
             // 
             this.gridCTHD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridCTHD.Location = new System.Drawing.Point(-3, 413);
+            this.gridCTHD.Location = new System.Drawing.Point(1, 374);
             this.gridCTHD.Name = "gridCTHD";
             this.gridCTHD.RowHeadersWidth = 62;
             this.gridCTHD.RowTemplate.Height = 28;
-            this.gridCTHD.Size = new System.Drawing.Size(1132, 253);
+            this.gridCTHD.Size = new System.Drawing.Size(1132, 240);
             this.gridCTHD.TabIndex = 18;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 367);
+            this.label2.Location = new System.Drawing.Point(16, 328);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(219, 32);
             this.label2.TabIndex = 19;
@@ -101,7 +101,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1156, 694);
+            this.ClientSize = new System.Drawing.Size(1156, 626);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.gridCTHD);
             this.Controls.Add(this.btnXoa);

@@ -17,17 +17,6 @@ namespace QuanLyCafe
     {
         public static String MaNV = "";
         public static String connectionString = "Data Source=PERSONAL-01;Initial Catalog=PY_CAFE;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
         private bool KiemTraDangNhap(string taiKhoan, string matKhau)
         {
             using (SqlConnection conn = new SqlConnection(connectionString)) // Tạo đối tượng kết nối đến cơ sở dữ liệu
@@ -70,16 +59,6 @@ namespace QuanLyCafe
                 return ketQua;
             }
         }
-
-
-
-
-
-        
-        
-        
-        
-        
         public Form1()
         {
             InitializeComponent();
@@ -107,25 +86,10 @@ namespace QuanLyCafe
                 MessageBox.Show("Tên đăng nhập hoặc mật khẩu không đúng.", "Lỗi đăng nhập", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-
-
-
-
-
-
-
-
-
-
-
-        
-
         private void btnThoat_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
         private void Form1_Load(object sender, EventArgs e)
         {
             this.Icon = new Icon(@"D:\ky 1 nam 3\net\DoAn\DoAn_Net.NhomDoAn7.DH24TH3_Nhom2_To1\QuanLyCafe\HinhAnh\cafe_icon.ico");

@@ -16,7 +16,6 @@ namespace QuanLyCafe
         private DataTable _dtSanPham; // tạo ở ngoài vì cần xài nhiều lần
         private DataTable _dtKhachHang;
 
-
         public Form3()
         {
             InitializeComponent();
@@ -33,13 +32,7 @@ namespace QuanLyCafe
             Grid1.CellValueChanged += Grid1_ThayDoi; // sự kiện khi giá trị ô thay đổi
             Grid1.CurrentCellDirtyStateChanged += Grid1_CurrentCellDirtyStateChanged; // sự kiện khi ô hiện tại bị thay đổi trạng thái
             Grid1.EditingControlShowing += Grid1_ChongChonTrung;
-
-
         }
-
-
-
-
         private void btnTao_Click(object sender, EventArgs e)
         {
             TaoHoaDon();
@@ -55,8 +48,6 @@ namespace QuanLyCafe
         {
             LayThongTinNV();
         }
-
-
         private void LayThongTinNV()
         {
             string query = "SELECT MANV, HOTEN, CHUCVU FROM dbo.NhanVien WHERE MANV = @manv";
@@ -317,18 +308,11 @@ namespace QuanLyCafe
             }
             return maHD;
         }
-
-
-
-
-
         private void Grid1_ChongChonTrung(object sender, DataGridViewEditingControlShowingEventArgs e)
         {
             if (Grid1.CurrentCell.OwningColumn.Name == "TenSP" && e.Control is ComboBox cb) // nếu cột hiện tại là Tên Sản Phẩm và control là ComboBox
             {
-                // Gỡ event cũ để tránh nhân đôi
-                cb.SelectedIndexChanged -= ComboBox_SelectedIndexChanged; // thêm sự kiện chọn trùng , -= là vì tránh bị gọi nhiều lần
-                cb.SelectedIndexChanged += ComboBox_SelectedIndexChanged; // thêm sự kiện chọn trùng, += là vì tránh bị gọi nhiều lần vì khi chọn lại sẽ gọi lại nhiều lần mà nếu ko có -= thì sẽ bị nhân đôi sự kiện
+                cb.SelectedIndexChanged += ComboBox_SelectedIndexChanged; //  sự kiện chọn trùng
             }
             if (Grid1.CurrentCell.OwningColumn.Name == "SoLuong" && e.Control is TextBox tb)
             {
@@ -336,7 +320,6 @@ namespace QuanLyCafe
                 tb.KeyPress += TextBox_SoLuong_KeyPress;
             }
         }
-
         private void ComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             ComboBox cb = sender as ComboBox;
@@ -383,10 +366,8 @@ namespace QuanLyCafe
             decimal tongTien = decimal.Parse(txtThanhTien.Text, System.Globalization.NumberStyles.AllowThousands);
             int diemThuong = (int)(tongTien / 10000); // 1 điểm cho mỗi 10,000 đồng
             return diemThuong;
-        }
-
-        
+        }        
     }
-    }
+}
 
 

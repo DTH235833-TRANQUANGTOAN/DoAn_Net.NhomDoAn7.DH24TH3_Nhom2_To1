@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient; // Thêm thư viện để làm việc với SQL Server
+using System.Data.SqlClient; 
 
 namespace QuanLyCafe
 {
