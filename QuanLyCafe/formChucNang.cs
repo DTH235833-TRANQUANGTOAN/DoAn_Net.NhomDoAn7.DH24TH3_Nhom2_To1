@@ -56,8 +56,9 @@ namespace QuanLyCafe
                 btnNhapNguyenLieu.Enabled = true;
                 btnKhachThanhVien.Enabled = true;
                 btnQuanLyNhanVien.Enabled = true;
+                btnDoanhThu.Enabled = true;
             }
-            else // may chuc vụ khác thì làm gì cũng dc ngoại trừ vụ nhân viên
+            else // may chuc vụ khác thì làm gì cũng dc ngoại trừ vụ nhân viên vs doanh thu
             {
                 btnBanHang.Enabled = true;
                 btnKiemTraKho.Enabled = true;
@@ -65,6 +66,7 @@ namespace QuanLyCafe
                 btnNhapNguyenLieu.Enabled = true;
                 btnKhachThanhVien.Enabled = true;
                 btnQuanLyNhanVien.Enabled = false;
+                btnDoanhThu.Enabled = false;
             }
         }
 
