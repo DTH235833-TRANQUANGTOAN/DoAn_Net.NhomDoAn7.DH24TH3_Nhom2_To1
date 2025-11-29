@@ -60,7 +60,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 15F);
-            this.label1.Location = new System.Drawing.Point(378, 9);
+            this.label1.Location = new System.Drawing.Point(358, 29);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(190, 41);
             this.label1.TabIndex = 1;
@@ -69,7 +69,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(637, 42);
+            this.label2.Location = new System.Drawing.Point(617, 62);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(304, 32);
             this.label2.TabIndex = 2;
@@ -79,7 +79,7 @@
             // 
             this.btnBanHang.BackColor = System.Drawing.Color.Linen;
             this.btnBanHang.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnBanHang.Location = new System.Drawing.Point(105, 77);
+            this.btnBanHang.Location = new System.Drawing.Point(85, 97);
             this.btnBanHang.Name = "btnBanHang";
             this.btnBanHang.Size = new System.Drawing.Size(167, 74);
             this.btnBanHang.TabIndex = 3;
@@ -91,7 +91,7 @@
             // 
             this.btnKiemTraKho.BackColor = System.Drawing.Color.Linen;
             this.btnKiemTraKho.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnKiemTraKho.Location = new System.Drawing.Point(105, 157);
+            this.btnKiemTraKho.Location = new System.Drawing.Point(85, 177);
             this.btnKiemTraKho.Name = "btnKiemTraKho";
             this.btnKiemTraKho.Size = new System.Drawing.Size(167, 74);
             this.btnKiemTraKho.TabIndex = 4;
@@ -103,7 +103,7 @@
             // 
             this.btnKiemTraHoaDon.BackColor = System.Drawing.Color.Linen;
             this.btnKiemTraHoaDon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnKiemTraHoaDon.Location = new System.Drawing.Point(278, 157);
+            this.btnKiemTraHoaDon.Location = new System.Drawing.Point(258, 177);
             this.btnKiemTraHoaDon.Name = "btnKiemTraHoaDon";
             this.btnKiemTraHoaDon.Size = new System.Drawing.Size(167, 74);
             this.btnKiemTraHoaDon.TabIndex = 6;
@@ -115,7 +115,7 @@
             // 
             this.btnNhapNguyenLieu.BackColor = System.Drawing.Color.Linen;
             this.btnNhapNguyenLieu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnNhapNguyenLieu.Location = new System.Drawing.Point(278, 77);
+            this.btnNhapNguyenLieu.Location = new System.Drawing.Point(258, 97);
             this.btnNhapNguyenLieu.Name = "btnNhapNguyenLieu";
             this.btnNhapNguyenLieu.Size = new System.Drawing.Size(167, 74);
             this.btnNhapNguyenLieu.TabIndex = 5;
@@ -127,7 +127,7 @@
             // 
             this.btnKhachThanhVien.BackColor = System.Drawing.Color.Linen;
             this.btnKhachThanhVien.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnKhachThanhVien.Location = new System.Drawing.Point(451, 157);
+            this.btnKhachThanhVien.Location = new System.Drawing.Point(431, 177);
             this.btnKhachThanhVien.Name = "btnKhachThanhVien";
             this.btnKhachThanhVien.Size = new System.Drawing.Size(167, 74);
             this.btnKhachThanhVien.TabIndex = 8;
@@ -139,7 +139,7 @@
             // 
             this.btnQuanLyNhanVien.BackColor = System.Drawing.Color.Linen;
             this.btnQuanLyNhanVien.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnQuanLyNhanVien.Location = new System.Drawing.Point(451, 77);
+            this.btnQuanLyNhanVien.Location = new System.Drawing.Point(431, 97);
             this.btnQuanLyNhanVien.Name = "btnQuanLyNhanVien";
             this.btnQuanLyNhanVien.Size = new System.Drawing.Size(167, 74);
             this.btnQuanLyNhanVien.TabIndex = 7;
@@ -151,7 +151,7 @@
             // 
             this.btnThoat.BackColor = System.Drawing.Color.Linen;
             this.btnThoat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnThoat.Location = new System.Drawing.Point(367, 259);
+            this.btnThoat.Location = new System.Drawing.Point(347, 279);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(167, 74);
             this.btnThoat.TabIndex = 10;
@@ -163,7 +163,7 @@
             // 
             this.btnDanhSachSanPham.BackColor = System.Drawing.Color.Linen;
             this.btnDanhSachSanPham.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnDanhSachSanPham.Location = new System.Drawing.Point(624, 77);
+            this.btnDanhSachSanPham.Location = new System.Drawing.Point(604, 97);
             this.btnDanhSachSanPham.Name = "btnDanhSachSanPham";
             this.btnDanhSachSanPham.Size = new System.Drawing.Size(167, 74);
             this.btnDanhSachSanPham.TabIndex = 9;
@@ -175,7 +175,7 @@
             // 
             this.btnDoanhThu.BackColor = System.Drawing.Color.Linen;
             this.btnDoanhThu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnDoanhThu.Location = new System.Drawing.Point(624, 157);
+            this.btnDoanhThu.Location = new System.Drawing.Point(604, 177);
             this.btnDoanhThu.Name = "btnDoanhThu";
             this.btnDoanhThu.Size = new System.Drawing.Size(167, 74);
             this.btnDoanhThu.TabIndex = 11;

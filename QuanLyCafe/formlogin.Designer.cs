@@ -41,7 +41,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 17F);
-            this.label1.Location = new System.Drawing.Point(184, 9);
+            this.label1.Location = new System.Drawing.Point(210, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(213, 46);
             this.label1.TabIndex = 0;
@@ -57,7 +57,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(21, 83);
+            this.label2.Location = new System.Drawing.Point(38, 80);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(174, 32);
             this.label2.TabIndex = 2;

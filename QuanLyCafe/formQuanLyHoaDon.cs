@@ -6,8 +6,10 @@ using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Globalization;
 
 namespace QuanLyCafe
 {
@@ -166,7 +168,9 @@ namespace QuanLyCafe
                         foreach (DataRow row in table.Rows)
                         {
                             string ngaylap = Convert .ToDateTime(row["NGAYLAP"]).ToString("dd/MM/yyyy");
-                            GridHoaDon.Rows.Add(row["MAHD"], ngaylap, row["MANV"], row["MAKH"], row["TONGTIEN"]);
+                            decimal tienValue = Convert.ToDecimal(row["TONGTIEN"]);
+                            string Tongtien = tienValue.ToString("N0", new System.Globalization.CultureInfo("vi-VN"));
+                            GridHoaDon.Rows.Add(row["MAHD"], ngaylap, row["MANV"], row["MAKH"], Tongtien);
                         }
                     }
                 }
@@ -225,16 +229,19 @@ namespace QuanLyCafe
                     {
                         DataTable table = new DataTable(); // Tạo một DataTable để lưu trữ dữ liệu
                         table.Load(reader); // Load dữ liệu từ SqlDataReader vào DataTable
-                       
-                        
                         
 
-                   
+
+
+
                         gridCTHD.Rows.Clear(); // Xóa dữ liệu hiện có trong DataGridView
                         foreach (DataRow row in table.Rows)
                         {
+                            decimal DonGiaValue = Convert.ToDecimal(row["DONGIA"]);
+                            string DonGia = DonGiaValue.ToString("N0", new System.Globalization.CultureInfo("vi-VN"));
                             double ThanhTien = Convert.ToDouble(row["SOLUONG"]) * Convert.ToDouble(row["DONGIA"]);
-                            gridCTHD.Rows.Add(row["MAHD"], row["TENSP"], row["SOLUONG"], row["DONGIA"], ThanhTien);
+                            string ThanhTienStr = ThanhTien.ToString("N0", new System.Globalization.CultureInfo("vi-VN"));
+                            gridCTHD.Rows.Add(row["MAHD"], row["TENSP"], row["SOLUONG"], DonGia, ThanhTienStr);
                         }
                     }
                 }
